@@ -13,9 +13,7 @@ dotenv.config()
 const port = process.env.PORT || 5000
 
 app.use(express.json())
-app.use(cors({
-    origin: ['https://task-manager-mern-app.netlify.app/']
-}))
+app.use(cors())
 
 connectDB()
 
